@@ -21,7 +21,7 @@ phases:
     commands:
       - echo "Running any additional tasks after the build"
       - docker push 767397811981.dkr.ecr.us-east-1.amazonaws.com/test-repository:latest
-      - printf '[{"name":"backend-repo","imageUri":"%s"}]' 767397811981.dkr.ecr.us-east-1.amazonaws.com/test-repository:latest > imagedefinitions.json
+      - printf '[{"name":"test-repository","imageUri":"%s"}]' 767397811981.dkr.ecr.us-east-1.amazonaws.com/test-repository:latest > imagedefinitions.json
       - cat imagedefinitions.json
 
 artifacts:
