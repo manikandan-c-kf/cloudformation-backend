@@ -31,8 +31,4 @@ artifacts:
 cache:
   paths:
     - vendor/**/*
-
-cache:
-  paths:
-    - vendor/**/*
     - node_modules/**/*
