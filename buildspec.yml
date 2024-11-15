@@ -15,6 +15,7 @@ phases:
     commands:
       - echo "Preparing application for deployment..."
       - docker build -t test-repository .
+      - docker tag test-repository:latest 767397811981.dkr.ecr.us-east-1.amazonaws.com/test-repository:latest
 
   post_build:
     commands:
@@ -30,5 +31,5 @@ artifacts:
 
 cache:
   paths:
-    - vendor/**/*
+    - vendor/**/* 
     - node_modules/**/*
