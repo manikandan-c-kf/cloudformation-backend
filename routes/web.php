@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/health', function () {
+Route::get('/healthy', function () {
     return response()->json(['status' => 'healthy'], 200);
 });
