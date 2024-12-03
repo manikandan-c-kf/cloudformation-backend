@@ -27,7 +27,7 @@ phases:
 artifacts:
   files:
     - '**/*'
-    - imagedefinitions.json
+    - imagedefinitions.json 
 
 cache:
   paths:
